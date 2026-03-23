@@ -43,7 +43,8 @@ st.markdown("---")
 # client = OpenAI(api_key="key")
 
 # Safe api key uses
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
 
 # -------------------- SESSION STATE --------------------
 if "messages" not in st.session_state:
