@@ -40,7 +40,7 @@ st.markdown("---")
 
 # -------------------- OPENAI CLIENT --------------------
 # unsafe api 
-client = OpenAI(api_key="key")
+# client = OpenAI(api_key="key")
 
 # Safe api key uses
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
