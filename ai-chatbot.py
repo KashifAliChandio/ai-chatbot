@@ -39,7 +39,10 @@ st.caption("Smart • Fast • Interactive")
 st.markdown("---")
 
 # -------------------- OPENAI CLIENT --------------------
-# client = OpenAI(api_key=st.secrets['OPENAI_API_KEY'])
+# unsafe api 
+client = OpenAI(api_key="key")
+
+# Safe api key uses
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # -------------------- SESSION STATE --------------------
